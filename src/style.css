@@ -196,7 +196,7 @@ body * {
   line-height: 1.25;
   color: #614c2f;
   font-weight: 800;
-  -webkit-text-stroke: 1px #fff;
+  -webkit-text-stroke: 5px #fff;
   paint-order: stroke fill;
   text-shadow: none;
   transform: translateY(-8px);

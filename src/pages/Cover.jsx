@@ -25,7 +25,21 @@ export default function Cover(){
  };
  return <main className="cover-app">
   <section className="storybook">
-   <div className="title-card"><small>¡Acompáñame a celebrar!</small><h1>Ismael<br/>Alejandro</h1><span>¡MIS 2 AÑITOS!</span></div>
+   <div className="title-card-wrap">
+  <div className="title-card">
+    <h1>
+      Ismael
+      <br />
+      Alejandro
+    </h1>
+  </div>
+
+  <p className="title-subtext">
+    Acompáñame a celebrar
+    <br />
+    este día tan especial
+  </p>
+</div>
    <div className="tractor-path"><button className="tractor-moving tractor-button" type="button" onClick={openInvitation} aria-label="Abrir invitación de Canva" title="Abrir invitación"><Tractor/></button></div>
    <div className={`welcome-pass ${arrived?'welcome-pass--visible':''}`}>
     {loading ? <p>Cargando tu pase…</p> : error ? <div className="pass-error"><AlertCircle size={22}/><p>{error}</p></div> : <>
